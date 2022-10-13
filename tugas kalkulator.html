@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator</title>
+    <link rel="stylesheet" href="css kalkulator.css">
+    <script src="js kalkulator.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="kalkulator">
+        <form name="formisi">
+            <input type="text" class="hasil" name="hasil">
+        </form>
+        <table>
+            <tr>
+                <td><input type="button" class="button" value="AC" onclick="AC()"></td>
+                <td><input type="button" class="button" value="Del" onclick="hapus()"></td>
+                <td><input type="button" class="button" value="x" onclick="nilai('*')"></td>
+                <td><input type="button" class="button" value="/" onclick="nilai('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="9" onclick="nilai(9)"></td>
+                <td><input type="button" class="button" value="8" onclick="nilai(8)"></td>
+                <td><input type="button" class="button" value="7" onclick="nilai(7)"></td>
+                <td><input type="button" class="button" value="+" onclick="nilai('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="6" onclick="nilai(6)"></td>
+                <td><input type="button" class="button" value="5" onclick="nilai(5)"></td>
+                <td><input type="button" class="button" value="4" onclick="nilai(4)"></td>
+                <td><input type="button" class="button" value="-" onclick="nilai()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="3" onclick="nilai(3)"></td>
+                <td><input type="button" class="button" value="2" onclick="nilai(2)"></td>
+                <td><input type="button" class="button" value="1" onclick="nilai(1)"></td>
+                <td rowspan="2"><input type="button" class="samadengan" value="=" onclick="dengan()"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" class="nol" value="0" onclick="nilai(0)"></td>
+                <td><input type="button" class="button" value="."></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
